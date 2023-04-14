@@ -10,8 +10,5 @@ export class AppComponent {
   title = 'Selfie à wookie!';
   subTitle = 'La super application';
   logoAffiche = true;
-  lesSelfies: Selfie[] = [
-    {image: '', wookie: {nom: 'chewie' , selfies:[]}},
-    {image: '', wookie: {nom: 'chewie2' , selfies:[]}}
-  ];
+
 }
