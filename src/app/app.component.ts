@@ -10,5 +10,9 @@ export class AppComponent {
   title = 'Selfie à wookie!';
   subTitle = 'La super application';
   logoAffiche = true;
+  filterValue: string|undefined;
+  rechercheSelfie(valeur:string | undefined){
+    this.filterValue = valeur;
+  }
 
 }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Selfie} from "../../../models/selfie";
 
 
@@ -8,6 +8,11 @@ import {Selfie} from "../../../models/selfie";
   styleUrls: ['./selfie-list.component.css']
 })
 export class SelfieListComponent implements OnInit{
+
+  @Input()
+  set filter(value: string|undefined) {
+    console.log(value);
+  }
   lesSelfies: Selfie[] = [
     {image: '/assets/images/16682378_web1_190503-GNG-MayFourthChewbacca_1.jpg',titre:'un super selfie', wookie: {nom: 'chewie' , selfies:[]}},
     {image: '/assets/images/one-fun-day-in-the-life-of-a-wookie_big.jpg',titre:'un selfie de ouff' ,wookie: {nom: 'chewie2' , selfies:[]}}
